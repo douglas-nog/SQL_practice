@@ -1,3 +1,8 @@
+-- Write a query to find the top 5 films with the highest rental rates. 
+-- The result should include the film title, rental rate, and the total number of times 
+-- each film has been rented. Order the results by rental rate in descending order and, 
+-- for films with the same rental rate, by the total number of rentals in descending order.
+
 SELECT 
 	title,
 	rental_rate,
