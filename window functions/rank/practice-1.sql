@@ -7,7 +7,7 @@ FROM
 		f.title,
 		f.rental_rate,
 		COUNT(rental_date) AS total_rented,
-		DENSE_RANK() OVER(ORDER BY f.rental_rate DESC, COUNT(r.rental_id)) AS rank
+		DENSE_RANK() OVER(ORDER BY f.rental_rate DESC, COUNT(r.rental_id) DESC) AS rank
 	FROM film f
 	LEFT JOIN inventory i 
 	ON f.film_id = i.film_id 
